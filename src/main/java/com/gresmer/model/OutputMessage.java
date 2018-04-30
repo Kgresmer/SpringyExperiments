@@ -9,6 +9,9 @@ public class OutputMessage {
     private String text;
     private String time;
 
+    public OutputMessage() {
+    }
+
     public OutputMessage(String from, String text, String time) {
         this.from = from;
         this.text = text;

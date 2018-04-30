@@ -2,6 +2,8 @@ package com.gresmer.controller;
 
 import com.gresmer.model.Message;
 import com.gresmer.model.OutputMessage;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Controller;
@@ -9,9 +11,6 @@ import org.springframework.stereotype.Controller;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
- * Created by kgresmer on 4/19/2018.
- */
 @Controller
 public class MessageController {
 
